@@ -7,7 +7,7 @@ const pubsub = new PubSub();
 /**
  * TODO(developer): Uncomment the following lines to run the sample.
  */
-const subscriptionName = 'mySubscription';
+const subscriptionName = process.env['MY_SUBSCRIPTION'];
 const timeout = 60;
 
 // References an existing subscription

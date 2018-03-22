@@ -20,4 +20,4 @@ def receive_messages(project, subscription_name):
     while True:
         time.sleep(60)
 
-receive_messages(os.environ['PROJECT_ID'], 'mySubscription')
+receive_messages(os.environ['PROJECT_ID'], os.environ['MY_SUBSCRIPTION'])

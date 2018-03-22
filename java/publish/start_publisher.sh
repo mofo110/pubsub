@@ -1,4 +1,4 @@
 #!/bin/bash
 source ~/gcp/env_vars.txt
 
-java -jar ./build/libs/cloud-publisher.jar myTopic 1
+java -jar ./build/libs/publish.jar ${MY_TOPIC} 1

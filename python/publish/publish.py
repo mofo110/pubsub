@@ -14,4 +14,4 @@ def publish_messages(project, topic_name):
 
     print('Published messages.')
 
-publish_messages(os.environ['PROJECT_ID'], 'myTopic')
+publish_messages(os.environ['PROJECT_ID'], os.environ['MY_TOPIC'])
