@@ -25,6 +25,8 @@ Create a ~/gcp/env_vars.txt file with some basic environment variables:
 export GOOGLE_APPLICATION_CREDENTIALS=~/gcp/keyfile.json
 export SERVICE_ACCOUNT=[your service account email]
 export PROJECT_ID=[your project id]
+export MY_TOPIC=[your topic name]
+export MY_SUBSCRIPTION=[your subscription name]
 ```
 
 ### Installing/Building
