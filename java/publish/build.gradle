@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group = 'cloud'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile 'com.google.cloud:google-cloud-pubsub:0.32.0-beta'
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "cloud.publisher.PublisherExample"
+    }
+ 
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
