@@ -1,6 +1,6 @@
-# Google Cloud Pub/Sub Sample - Node.js
+# Google Cloud Pub/Sub Sample
 
-This is my sample implementation of the Google Cloud Pub/Sub Node.js client library.
+This is my sample implementation of the Google Cloud Pub/Sub Java/Node.js/Python client libraries.
 
 ## Getting Started
 
@@ -20,6 +20,7 @@ Save your private key file as ~/gcp/keyfile.json.
 ### Configuration
 
 Create a ~/gcp/env_vars.txt file with some basic environment variables:
+
 ```
 export GOOGLE_APPLICATION_CREDENTIALS=~/gcp/keyfile.json
 export SERVICE_ACCOUNT=[your service account email]
@@ -70,6 +71,7 @@ Activated service account credentials for: ${SERVICE_ACCOUNT}
 ### Setup
 
 Run the ./pubsub/setup/create.sh script to create a topic and subscription.
+
 ```
 Created topic [projects/${PROJECT_ID}/topics/myTopic].
 ---
@@ -109,6 +111,7 @@ Received message 57081909257453:
 ### Teardown
 
 Run the ./pubsub/teardown/destroy.sh script to cleanup the subscription and topic.
+
 ```
 Deleted subscription [projects/${PROJECT_ID}/subscriptions/mySubscription].
 Listed 0 items.
